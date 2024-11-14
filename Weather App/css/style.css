@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    background: url('wather5.jpg') no-repeat center center/cover;
+    color:#00ffcc;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 650px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"] {
+    padding: 15px;
+    width: calc(100% - 30px);
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 18px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color:#00ffcc;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="text"]::placeholder {
+    color: #00ffcc;
+    opacity: 0.7;
+}
+
+input[type="text"]:focus {
+    border-color: #66c2ff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button {
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color:#0066cc;
+    color:#00ff11 ;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color:#002b1c;
+    transform: scale(1.05);
+}
+
+.suggestions {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    max-height: 180px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    display: none; /* Initially hidden */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fffb00;
+}
+
+.suggestion-item {
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.suggestion-item:hover {
+    background-color: rgba(30, 144, 255, 0.3);
+    color: #ffffff;
+}
+
+#weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+#weather-info .icon {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+#weather-info {
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.content{
+    display: flex;
+    justify-content:space-between;
+}
+
+#prayer-times{
+margin: 10px 0;
+line-height:1.6;
+text-align: left;
+}
