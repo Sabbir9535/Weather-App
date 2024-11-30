@@ -142,7 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.error("Error fetching weather data:", error);
             });
 
-        // Fetch prayer times
         fetch(prayerApiUrl)
             .then(response => response.json())
             .then(data => {
